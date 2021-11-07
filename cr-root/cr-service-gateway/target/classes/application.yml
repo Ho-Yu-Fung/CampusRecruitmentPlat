@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: GATEWAY
+  cloud:
+    nacos:
+      server-addr: 47.98.185.242:8848
+    gateway:
+      routes:
+        - id: service-user
+          uri: lb://USERSERVICE
+          predicates:
+            - Path=/hello
+server:
+  port: 8080

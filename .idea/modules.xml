@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cr-root/cr-root.iml" filepath="$PROJECT_DIR$/cr-root/cr-root.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cr-root/cr-service-admin/cr-service-admin.iml" filepath="$PROJECT_DIR$/cr-root/cr-service-admin/cr-service-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cr-root/cr-service-common/cr-service-common.iml" filepath="$PROJECT_DIR$/cr-root/cr-service-common/cr-service-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cr-root/cr-service-gateway/cr-service-gateway.iml" filepath="$PROJECT_DIR$/cr-root/cr-service-gateway/cr-service-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cr-root/cr-service-position/cr-service-position.iml" filepath="$PROJECT_DIR$/cr-root/cr-service-position/cr-service-position.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cr-root/cr-service-user/cr-service-user.iml" filepath="$PROJECT_DIR$/cr-root/cr-service-user/cr-service-user.iml" />
+    </modules>
+  </component>
+</project>

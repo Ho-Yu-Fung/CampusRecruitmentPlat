@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: pers.ho:cr-service-common:1.0-SNAPSHOT">
+    <CLASSES />
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/cr-root/cr-service-common/cr-service-common-1.0-SNAPSHOT-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pers/ho/cr-service-common/1.0-SNAPSHOT/cr-service-common-1.0-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/cr-root/cr-service-common/cr-service-common-1.0-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pers/ho/cr-service-common/1.0-SNAPSHOT/cr-service-common-1.0-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

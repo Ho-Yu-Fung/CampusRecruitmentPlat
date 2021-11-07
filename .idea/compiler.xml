@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_HEAP_SIZE" value="2800" />
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cr-service-admin" />
+        <module name="cr-service-gateway" />
+        <module name="cr-service-common" />
+        <module name="cr-service-user" />
+        <module name="cr-service-position" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cr-root" target="1.8" />
+      <module name="cr-service-admin" target="8" />
+      <module name="cr-service-common" target="8" />
+      <module name="cr-service-common (2)" target="8" />
+      <module name="cr-service-gateway" target="1.8" />
+      <module name="cr-service-position" target="8" />
+      <module name="cr-service-user" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cr-root" options="-parameters" />
+      <module name="cr-service-admin" options="-parameters" />
+      <module name="cr-service-common" options="-parameters" />
+      <module name="cr-service-gateway" options="-parameters" />
+      <module name="cr-service-position" options="-parameters" />
+      <module name="cr-service-user" options="-parameters" />
+    </option>
+  </component>
+</project>
