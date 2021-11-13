@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ho.mapper.RegionInfoMapper" >
+    <select id="listCitiesByProvinceId" resultType="java.lang.String">
+        select city_id,city from crp_cities where province_id = #{id};
+    </select>
+    <select id="listAreasByCityId" resultType="java.lang.String">
+        select area_id,area from crp_areas where city_id = #{id};
+    </select>
+    <select id="listPositionAreaByPostId" resultType="java.lang.String">
+        select area from crp_position_area cpa ,crp_area ca
+        where cpa.area_id = ca.area_id AND cpa.position_id = #{postId};
+    </select>
+</mapper>

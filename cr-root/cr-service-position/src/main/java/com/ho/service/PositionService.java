@@ -1,6 +1,6 @@
 package com.ho.service;
 
-import com.ho.entity.Position;
+import com.ho.pojo.entity.PositionDO;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author Ho
  * @since 2021-11-13
  */
-public interface PositionService extends IService<Position> {
+public interface PositionService extends IService<PositionDO> {
 
 }

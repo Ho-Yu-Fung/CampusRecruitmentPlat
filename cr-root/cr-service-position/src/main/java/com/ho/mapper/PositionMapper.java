@@ -1,7 +1,13 @@
 package com.ho.mapper;
 
-import com.ho.entity.Position;
+import com.ho.pojo.entity.PositionDO;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.ho.pojo.vo.PositionInfoVO;
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+import java.util.Set;
 
 /**
  * <p>
@@ -11,6 +17,12 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author Ho
  * @since 2021-11-13
  */
-public interface PositionMapper extends BaseMapper<Position> {
+@Mapper
+@Repository
+public interface PositionMapper extends BaseMapper<PositionDO> {
+    List<PositionInfoVO> listPositionInfo();
+
+    Set<String> listLabelByPostId(Integer id);
+
 
 }

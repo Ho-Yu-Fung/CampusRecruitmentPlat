@@ -1,0 +1,12 @@
+server:
+  port: 8086
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/crp?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: mysql
+  application:
+    name: POSITION-SERVICE
+mybatis-plus:
+  mapper-locations: classpath:mapper/*Mapper.xml

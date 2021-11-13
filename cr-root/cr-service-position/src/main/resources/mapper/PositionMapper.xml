@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ho.mapper.PositionMapper">
+
+    <sql id = "qryRes">
+        enterprise_id AS enterpriseId,title,po_describe AS po_describe,duty,salary_max AS salaryMax,salary_min AS salaryMin,
+        created_time AS createdTime,updated_time AS updatedTime
+    </sql>
+
+    <select id="listPositionInfo" resultType="com.ho.pojo.vo.PositionInfoVO">
+        select cp.id,<include refid="qryRes"/>,cq.qualification from crp_position cp,crp_qualification cq
+        <where>
+            cp.qualification_id = cq.id;
+        </where>
+    </select>
+
+    <select id="listLabelByPostId" resultType="java.lang.String">
+        select cp.content from crp_position_postlabel cpp,crp_postlabel cp
+        <where>
+            cpp.label_id = cp.id AND cpp.position_id = #{id};
+        </where>
+    </select>
+</mapper>

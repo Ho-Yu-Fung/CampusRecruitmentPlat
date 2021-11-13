@@ -1,4 +1,4 @@
-package com.ho.entity;
+package com.ho.pojo.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -7,8 +7,14 @@ import java.time.LocalDateTime;
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.HashSet;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
 /**
  * <p>
@@ -21,65 +27,40 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @TableName("crp_position")
-public class Position implements Serializable {
+@NoArgsConstructor
+@AllArgsConstructor
+@Accessors(chain = true)
+public class PositionDO implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-      @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    /**
-     * 企业id
-     */
     private Integer enterpriseId;
 
-    /**
-     * 岗位标题
-     */
-    private String titile;
+    private String title;
 
-    /**
-     * 岗位描述
-     */
-    private String desc;
+    private String poDescribe;
 
-    /**
-     * 岗位职责
-     */
     private String duty;
 
-    /**
-     * 最高薪水
-     */
     private Float salaryMax;
 
-    /**
-     * 最低薪水
-     */
     private Float salaryMin;
 
-    /**
-     * 学历要求
-     */
-    private Integer edu;
+    private Integer qualificationId;
 
-    /**
-     * 行业类型
-     */
     private Integer industryType;
 
     private Integer type;
 
-    /**
-     * 岗位发布状态
-     */
     private Integer ban;
 
-      @TableField(fill = FieldFill.INSERT)
+    @TableField(fill = FieldFill.INSERT)
     private LocalDateTime createdTime;
 
-      @TableField(fill = FieldFill.INSERT_UPDATE)
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     private LocalDateTime updatedTime;
-
 
 }
