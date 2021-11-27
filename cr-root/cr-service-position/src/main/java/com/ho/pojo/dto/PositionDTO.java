@@ -6,12 +6,15 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.util.HashSet;
+import java.util.Set;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class PositionDTO {
+
     @NotNull
     private Integer enterpriseId;
     @NotNull
@@ -33,9 +36,9 @@ public class PositionDTO {
 
     private Integer ban;
     @NotNull
-    private HashSet<String> area;
+    private Set<String> area;
 
-    private HashSet<Integer> label;
+    private Set<String> label;
 
 
 }

@@ -6,6 +6,9 @@
         enterprise_id AS enterpriseId,title,po_describe AS po_describe,duty,salary_max AS salaryMax,salary_min AS salaryMin,
         created_time AS createdTime,updated_time AS updatedTime
     </sql>
+    <insert id="savePostLabelsByPostId">
+--         insert
+    </insert>
 
     <select id="listPositionInfo" resultType="com.ho.pojo.vo.PositionInfoVO">
         select cp.id,<include refid="qryRes"/>,cq.qualification from crp_position cp,crp_qualification cq

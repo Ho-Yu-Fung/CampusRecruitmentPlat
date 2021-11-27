@@ -10,3 +10,9 @@ spring:
     name: POSITION-SERVICE
 mybatis-plus:
   mapper-locations: classpath:mapper/*Mapper.xml
+minio:
+  url: 47.98.185.242:9000
+  accessKey: admin
+  secretKey: admin123456
+  bucketName: crp
+

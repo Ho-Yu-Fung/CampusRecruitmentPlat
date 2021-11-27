@@ -21,8 +21,8 @@ import java.util.Set;
 @Repository
 public interface PositionMapper extends BaseMapper<PositionDO> {
     List<PositionInfoVO> listPositionInfo();
-
+    //通过岗位id查询对应的标签
     Set<String> listLabelByPostId(Integer id);
-
-
+    //存储企业对应的标签
+    Boolean savePostLabelsByPostId(Integer id,Set<String> labels);
 }

@@ -28,8 +28,9 @@ public class PositionController {
 
     @GetMapping
     public ResultApi<ListPositionInfoVO> listPositionInfo() {
-        ListPositionInfoVO info = positionService.listPositionInfo();
-        return ResultApi.success(info);
+//        ListPositionInfoVO info = positionService.listPositionBriefInfo();
+//        return ResultApi.success(info);
+        return null;
     }
 
     @PostMapping
